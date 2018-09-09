@@ -6,22 +6,22 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sufee Admin - HTML5 Admin Template</title>
+    <title>BlueBucket</title>
     <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/flag-icon.min.css">
-    <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="<?php echo base_url('');?>/assets/css/normalize.css">
+    <link rel="stylesheet" href="<?php echo base_url('');?>/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('');?>/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('');?>/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url('');?>/assets/css/flag-icon.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('');?>/assets/css/cs-skin-elastic.css">
     <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
-    <link rel="stylesheet" href="assets/scss/style.css">
-    <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url('');?>/assets/scss/style.css">
+    <link href="<?php echo base_url('');?>/assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -40,8 +40,8 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a>
-                <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+                <a class="navbar-brand" href="./"><img src="<?php echo base_url('');?>/images/logo.png" alt="Logo"></a>
+                <a class="navbar-brand hidden" href="./"><img src="<?php echo base_url('');?>/images/logo2.png" alt="Logo"></a>
             </div>
 
             <div id="main-menu" class="main-menu collapse navbar-collapse">
@@ -660,19 +660,19 @@
 
     <!-- Right Panel -->
 
-    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="<?php echo base_url('');?>/assets/js/vendor/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="<?php echo base_url('');?>/assets/js/plugins.js"></script>
+    <script src="<?php echo base_url('');?>/assets/js/main.js"></script>
 
 
-    <script src="assets/js/lib/chart-js/Chart.bundle.js"></script>
-    <script src="assets/js/dashboard.js"></script>
-    <script src="assets/js/widgets.js"></script>
-    <script src="assets/js/lib/vector-map/jquery.vmap.js"></script>
-    <script src="assets/js/lib/vector-map/jquery.vmap.min.js"></script>
-    <script src="assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.world.js"></script>
+    <script src="<?php echo base_url('');?>/assets/js/lib/chart-js/Chart.bundle.js"></script>
+    <script src="<?php echo base_url('');?>/assets/js/dashboard.js"></script>
+    <script src="<?php echo base_url('');?>/assets/js/widgets.js"></script>
+    <script src="<?php echo base_url('');?>/assets/js/lib/vector-map/jquery.vmap.js"></script>
+    <script src="<?php echo base_url('');?>/assets/js/lib/vector-map/jquery.vmap.min.js"></script>
+    <script src="<?php echo base_url('');?>/assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
+    <script src="<?php echo base_url('');?>/assets/js/lib/vector-map/country/jquery.vmap.world.js"></script>
     <script>
         ( function ( $ ) {
             "use strict";
