@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-icon.png">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="<?php echo base_url('');?>/assets/images/favicon.icofavicon.ico">
 
     <link rel="stylesheet" href="<?php echo base_url('');?>/assets/css/normalize.css">
     <link rel="stylesheet" href="<?php echo base_url('');?>/assets/css/bootstrap.min.css">

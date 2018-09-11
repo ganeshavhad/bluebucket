@@ -9,7 +9,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="./"><img src="<?php echo base_url('');?>/images/logo.png" alt="Logo"></a>
+                <a class="navbar-brand" href="./"><img src="<?php echo base_url('');?>/assets/images/logo.png" alt="Logo"></a>
                 <a class="navbar-brand hidden" href="./"><img src="<?php echo base_url('');?>/images/logo2.png" alt="Logo"></a>
             </div>
 
@@ -194,7 +194,7 @@
 
                                 <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
 
-                                <a class="nav-link" href="#"><i class="fa fa-power -off"></i>Logout</a>
+                                <a class="nav-link" href="<?php echo base_url('Welcome/index');?>"><i class="fa fa-power -off"></i>Logout</a>
                         </div>
                     </div>
 
