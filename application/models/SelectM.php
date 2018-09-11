@@ -6,6 +6,11 @@ class SelectM extends CI_Model {
 	
 	public function index()
 	{
-		$this->load->view('index');
+		$this->db->get('customer');
+	}
+    public function customer()
+	{
+		$data=$this->db->get('customer');
+        return $data->result();
 	}
 }

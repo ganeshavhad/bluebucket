@@ -8,4 +8,10 @@ class Admin extends CI_Controller {
 	{
 		$this->load->view('index');
 	}
+    public function customer()
+	{   
+        $this->load->model('SelectM');
+        $data['customer']=$this->SelectM->customer();
+		$this->load->view('customer',$data);
+	}
 }
