@@ -13,4 +13,9 @@ class SelectM extends CI_Model {
 		$data=$this->db->get('customer');
         return $data->result();
 	}
+    public function login($data)
+	{ 
+		$data=$this->db->query("SELECT * FROM partner INNER JOIN partner_credentials ON partner.partner_id = partner_credentials.partner_id WHERE PASSWORD='".$data['password']."' AND email_id='".$data['username']."'");
+       return $data->num_rows();
+	}
 }

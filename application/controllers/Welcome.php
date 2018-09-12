@@ -8,10 +8,25 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
-    public function customer()
+    
+    public function login()
 	{   
-        $this->load->model('SelectM');
-        $data['customer']=$this->SelectM->customer();
-		$this->load->view('customer',$data);
+        $data=$this->input->post();
+        $out=$this->load->model('SelectM');
+        $datab=$this->SelectM->login($data);
+    if($datab==1){
+        $this->session->set_userdata('user',$data['username']);
+        $this->session->set_flashdata('success','login successful');
+        redirect('Admin/index');
+    }else{
+          $this->session->set_flashdata('error','Please Entre correct email and password');
+           $this->load->view('login');
+        }
+	}
+    
+    public function logout()
+	{  
+        $this->session->sess_destroy();
+		$this->load->view('login');
 	}
 }

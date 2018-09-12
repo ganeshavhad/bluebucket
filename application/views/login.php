@@ -32,6 +32,21 @@
 
     <div class="sufee-login d-flex align-content-center flex-wrap">
         <div class="container">
+            
+ <?php if($this->session->flashdata('error') == 'Please Entre correct email and password'){ ?> 
+<div class="content mt-3">
+    <div class="animated fadeIn">
+        <div class="col-md-12">
+        <div class="sufee-alert alert with-close alert-danger alert-dismissible fade show">
+            <span class="badge badge-pill badge-danger">UnSuccessful</span>
+               <?php echo $this->session->flashdata('error'); ?> 
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        </div>
+    </div>
+</div><?php } ?>
             <div class="login-content">
                 <div class="login-logo">
                     <a href="index.html">
@@ -39,14 +54,14 @@
                     </a>
                 </div>
                 <div class="login-form">
-                    <form>
+                    <form action="<?php echo base_url('Welcome/login');?>" method="post">
                         <div class="form-group">
                             <label>Email address</label>
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" name="username" class="form-control" placeholder="Email" required>
                         </div>
                         <div class="form-group">
                             <label>Password</label>
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input type="password" name="password" class="form-control" placeholder="Password" required>
                         </div>
                         <div class="checkbox">
                             <label>

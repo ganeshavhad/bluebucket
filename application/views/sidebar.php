@@ -194,7 +194,7 @@
 
                                 <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
 
-                                <a class="nav-link" href="<?php echo base_url('Welcome/index');?>"><i class="fa fa-power -off"></i>Logout</a>
+                                <a class="nav-link" href="<?php echo base_url('Welcome/logout');?>"><i class="fa fa-power -off"></i>Logout</a>
                         </div>
                     </div>
 
