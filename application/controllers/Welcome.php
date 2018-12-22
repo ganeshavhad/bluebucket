@@ -6,7 +6,7 @@ class Welcome extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view('login');
+		$this->load->view('Admin/login');
 	}
     
     public function login()
@@ -20,13 +20,13 @@ class Welcome extends CI_Controller {
         redirect('Admin/index');
     }else{
           $this->session->set_flashdata('error','Please Entre correct email and password');
-           $this->load->view('login');
+           $this->load->view('Admin/login');
         }
 	}
     
     public function logout()
 	{  
         $this->session->sess_destroy();
-		$this->load->view('login');
+		$this->load->view('Admin/login');
 	}
 }

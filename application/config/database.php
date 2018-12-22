@@ -73,12 +73,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
-$db['default'] = array(
+/* private $db_host = '148.66.136.215';
+        private $db_user = 'mcjwimikhftl';
+        private $db_pass = 'M-p#IuTib4o';
+        private $db_name = 'bluebucket';
+*/
+if($_SERVER['HTTP_HOST']=='localhost'){
+	$db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
-	'database' => 'bluebucket',
+	'database' => 'bluebucket1',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -94,3 +100,29 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
+}
+	else{
+
+	
+$db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => '148.66.136.215',
+	'username' =>  'mcjwimikhftl',
+	'password' => 'wHS_izL8',
+	'database' => 'bluebucket',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);}
